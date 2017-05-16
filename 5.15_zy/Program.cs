@@ -307,16 +307,16 @@ namespace _5._15_zy
             #region 11.	使用for循环计算：一球从100米高度自由落下，每次落地后反跳回原高度的一半；再落下，求它在第10次落地时，共经过多少米？第10次反弹多高？
 
 
-            double h = 100, s = 100;
-            for (int i = 1; i < 10; i++)
-            {
-                s = s + h;
-                h = h / 2;
-            }
-            Console.WriteLine("经过路程：" + s);
-            Console.WriteLine("反弹高度：" + h / 2);
+            //double h = 100, s = 100;
+            //for (int i = 1; i < 10; i++)
+            //{
+            //    s = s + h;
+            //    h = h / 2;
+            //}
+            //Console.WriteLine("经过路程：" + s);
+            //Console.WriteLine("反弹高度：" + h / 2);
 
-            Console.ReadLine();
+            //Console.ReadLine();
 
             #endregion
 
@@ -351,23 +351,25 @@ namespace _5._15_zy
 
             #region 13.	使用循环打印以下圣诞树。
 
-            //Console.WriteLine("请输入三角形的长度：");
-            //int num = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("请输入三角形的长度：");
+            int num = Convert.ToInt32(Console.ReadLine());
 
-            //for (int i = 1; i <=num; i++)
-            //{
-            //    for (int j = 1; j <=num-i; j++)
-            //    {
-            //        Console.Write(" ");
-            //    }
-            //    for (int m = 1; m <=i; m++)
-            //    {
-            //        Console.Write("* ");
-            //    }
-            //    Console.WriteLine();
-            //}
+            for (int i = 1; i <= num; i++)
+            {
+                for (int j = 1; j <= num - i; j++)
+                {
+                    Console.Write(" ");
+                }
+                for (int m = 1; m <= i; m++)
+                {
+                    Console.Write("* ");
+                }
+                Console.WriteLine();
+            }
 
-            //Console.ReadLine();
+            Console.ReadLine();
+
+
             #endregion
         }
     }
